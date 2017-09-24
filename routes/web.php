@@ -15,14 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/home/', function () {
+    return view('home/index');
 });
 
-Route::get('/users', function () {
-    return view('users');
+Route::get('/users/', function () {
+    return view('users/index');
 });
 
 Route::get('/users/{user}', function () {
-    return view('users');
+    return view('users/user');
+});
+
+Route::get('/compliments/given', function () {
+    return view('compliments/given');
+});
+
+Route::get('/compliments/received', function () {
+    return view('compliments/received');
 });
