@@ -23,6 +23,6 @@ Route::get('/users', function () {
     return view('users');
 });
 
-Route::get('/users', function () {
+Route::get('/users/{user}', function () {
     return view('users');
 });
