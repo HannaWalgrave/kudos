@@ -32,5 +32,8 @@ Route::get('/compliments/given', function () {
 });
 
 Route::get('/compliments/received', function () {
-    return view('compliments/received');
+    $compliments = DB::table('compliments')->get();
+
+    return view('compliments/received' ,$compliments);
+
 });

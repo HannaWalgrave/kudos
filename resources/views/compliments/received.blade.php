@@ -9,5 +9,10 @@
 </head>
 <body>
 
+    @foreach($compliments as $compliment)
+        <h1>{{$compliment}}</h1>
+        @endforeach
+
 </body>
+
 </html>
