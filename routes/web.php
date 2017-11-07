@@ -24,3 +24,4 @@ Route::middleware('auth')->group(function () {
     Route::get('compliments/received', 'Complimentcontroller@received');
     Route::post('compliments', 'ComplimentController@store');
 });
+
