@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-<h1>home</h1>
+@section('content')
+    <h1>Welcome, {{$user->name}}</h1>
+    <img src="{{ $user->avatar }}" alt="{{ $user->name }}">
+@endsection
 </body>
 </html>
