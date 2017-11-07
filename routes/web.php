@@ -14,7 +14,7 @@
 Route::get('/', 'HomeController@index')->name('login');
 
 Route::get('users/facebook', 'UserController@redirectToFacebook');
-Route::get('users/handlefacebookcallback', 'UserController@handleFacebookCallback');
+Route::get('users/handleFacebookCallback', 'UserController@handleFacebookCallback');
 
 Route::middleware('auth')->group(function () {
     Route::get('users', 'UserController@index');
